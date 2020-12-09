@@ -1,0 +1,278 @@
+extends ../layouts/dashboard.pug
+
+block config
+    - var bodyClass = 'sb-nav-fixed'
+    - var pageTitle = '국가별 긴급 연락처';
+    - var index = true;
+    - var sidenavStyle = 'sb-sidenav-dark'
+
+append css
+    link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', rel='stylesheet', crossorigin='anonymous')
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=', crossorigin='anonymous')
+    link(href='assets/css/contactDetail.css', rel='stylesheet')
+
+block content
+    section.ftco-section.ftco-faqs
+        .container
+            .heading-section.mb-4.mt-5.mt-lg-0.section-title
+                h2#countryName.mb-3 Colombia
+            .row
+                .col-lg-6.order-md-last.mb-4
+                .col-lg-12
+                    #accordion.myaccordion.w-100.bg-white(aria-multiselectable='true' style='border-radius: 10px; padding: 5%')
+                        div
+                            h3.tit 대사관 연락처
+                            |  ㅇ 주소 : Embajada de la Repulica de Corea Calle 94 No.9-39, Bogota, Colombia
+                            br
+                            |  ㅇ 대표번호(근무시간 중) : (57) 1-616-7200
+                            br
+                            |  ㅇ 긴급연락처(사건사고 등 긴급상황 발생 시, 24시간) : (57) 321-976-3511
+                            br
+                            |  ㅇ E-mail :
+                            a(href='mailto:embacorea@mofa.go.kr') embacorea@mofa.go.kr
+                            br
+                            br
+                            h3.tit 주재국 신고
+                            |  ㅇ 통합비상연락처(강도, 도난, 화재, 앰블란스 등) : 123(보고타)
+                            br
+                            p(style='margin-left: 15px; margin-right: 15px;') - 경찰, 교통사고, 화재신고, 긴급 의료기관 요청(앰블란스)
+                            br
+                            h3.tit 의료기관 연락처
+                            table(style='FONT-SIZE: 10pt; BORDER-TOP: #3f3f3f 0px solid; HEIGHT: 639px; BORDER-RIGHT: #3f3f3f 0px solid; BORDER-COLLAPSE: collapse; BORDER-BOTTOM: #3f3f3f 0px solid; BORDER-LEFT: #3f3f3f 0px solid; WIDTH: 98%; BACKGROUND-COLOR: #ffffff' summary='콜롬비아 의료기관' align='center' border='1' cellpadding='0' cellspacing='0')
+                                caption(style='OVERFLOW: hidden; POSITION: absolute; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; DISPLAY: none; LINE-HEIGHT: 0; PADDING-RIGHT: 0px; VISIBILITY: hidden') 콜롬비아 의료기관
+                                tbody
+                                    tr
+                                        th(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 197px; BACKGROUND-COLOR: #ff7e00' scope='col')
+                                            p(style='TEXT-ALIGN: center')
+                                                span(style='COLOR: #ffffff') 병원명
+                                        th(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 279px; BACKGROUND-COLOR: #ff7e00' scope='col')
+                                            p(style='TEXT-ALIGN: center')
+                                                span(style='COLOR: #ffffff') 주소
+                                        th(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 177px; BACKGROUND-COLOR: #ff7e00' scope='col')
+                                            p(style='TEXT-ALIGN: center')
+                                                span(style='COLOR: #ffffff') 전화번호
+                                    tr
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 197px')
+                                            p(style='TEXT-ALIGN: center') ALVEAR 병원
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 279px')
+                                            p(style='TEXT-ALIGN: center')  Cra. 11 No.93A-38
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 177px')
+                                            p(style='TEXT-ALIGN: center')  610-0962
+                                    tr
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 197px')
+                                            p(style='TEXT-ALIGN: center') AMO 병원 
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 279px')
+                                            p(style='TEXT-ALIGN: center')  Cra. 16 No. 59-12
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 177px')
+                                            p(style='TEXT-ALIGN: center')  255-0841
+                                    tr
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 197px')
+                                            p(style='TEXT-ALIGN: center') BARRAQUER 병원 
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 279px')
+                                            p(style='TEXT-ALIGN: center')  Ave. 100 No. 18A-51
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 177px')
+                                            p(style='TEXT-ALIGN: center')  644-9555
+                                    tr
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 197px')
+                                            p(style='TEXT-ALIGN: center') BOCHICA 병원 
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 279px')
+                                            p(style='TEXT-ALIGN: center')  Calle 69 No14-29
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 177px')
+                                            p(style='TEXT-ALIGN: center')  211-3365
+                                    tr
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 197px')
+                                            p(style='TEXT-ALIGN: center') BOGOT병원 
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 279px')
+                                            p(style='TEXT-ALIGN: center')  Calle 13 No.17-21
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 177px')
+                                            p(style='TEXT-ALIGN: center')  234-7270
+                                    tr
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 197px')
+                                            p(style='TEXT-ALIGN: center') CAFAM 병원 
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 279px')
+                                            p(style='TEXT-ALIGN: center')  Calle 51 No. 15-34
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 177px')
+                                            p(style='TEXT-ALIGN: center')  310-5111
+                                    tr
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 197px')
+                                            p(style='TEXT-ALIGN: center') DEL COUNTRY 병원
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 279px')
+                                            p(style='TEXT-ALIGN: center')  Cra.16 No. 82-57
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 177px')
+                                            p(style='TEXT-ALIGN: center')  530-0470
+                                    tr
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 197px')
+                                            p(style='TEXT-ALIGN: center') DEL CHIC병원 
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 279px')
+                                            p(style='TEXT-ALIGN: center')  Cra 21 No.90-59
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 177px')
+                                            p(style='TEXT-ALIGN: center')  610-5357
+                                    tr
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 19px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 197px')
+                                            p(style='TEXT-ALIGN: center') DE MARLY 병원 
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 19px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 279px')
+                                            p(style='TEXT-ALIGN: center')  Calle 50 No.9-67
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 19px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 177px')
+                                            p(style='TEXT-ALIGN: center')  343-6600
+                                    tr
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 197px')
+                                            p(style='TEXT-ALIGN: center') DEL NORTE 병원 
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 279px')
+                                            p(style='TEXT-ALIGN: center')  Cra. 12 No. 139-91
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 177px')
+                                            p(style='TEXT-ALIGN: center')  651-1000
+                                    tr
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 197px')
+                                            p(style='TEXT-ALIGN: center') DEL OCCIDENTE 병원 
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 279px')
+                                            p(style='TEXT-ALIGN: center')  Ave. Americas No. 71C-29
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 177px')
+                                            p(style='TEXT-ALIGN: center')  425-4620
+                                    tr
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 197px')
+                                            p(style='TEXT-ALIGN: center') EL BOSQUE 병원 
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 279px')
+                                            p(style='TEXT-ALIGN: center')  Calle. 134 No. 7b-41
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 177px')
+                                            p(style='TEXT-ALIGN: center')  649-9300
+                                    tr
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 197px')
+                                            p(style='TEXT-ALIGN: center') EL CAMPIN 병원 
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 279px')
+                                            p(style='TEXT-ALIGN: center')  Tr. 24A No. 57-09
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 177px')
+                                            p(style='TEXT-ALIGN: center')  217-9367
+                                    tr
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 197px')
+                                            p(style='TEXT-ALIGN: center') INFANTIL 병원 
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 279px')
+                                            p(style='TEXT-ALIGN: center')  Clle 67 No. 10-67
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 177px')
+                                            p(style='TEXT-ALIGN: center')  254-4200
+                                    tr
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 197px')
+                                            p(style='TEXT-ALIGN: center') LA SABANA 병원 
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 279px')
+                                            p(style='TEXT-ALIGN: center')  Av. 19 No. 102-53
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 177px')
+                                            p(style='TEXT-ALIGN: center')  218-1204
+                                    tr
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 197px')
+                                            p(style='TEXT-ALIGN: center') MONSERRAT 병원 
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 279px')
+                                            p(style='TEXT-ALIGN: center')  Calle 134 No. 17-71
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 177px')
+                                            p(style='TEXT-ALIGN: center')  259-6000
+                                    tr
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 197px')
+                                            p(style='TEXT-ALIGN: center') NUEVA 병원 
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 279px')
+                                            p(style='TEXT-ALIGN: center')  Diag. 45 No. 16 B 23
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 177px')
+                                            p(style='TEXT-ALIGN: center')  2887100
+                                    tr
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 197px')
+                                            p(style='TEXT-ALIGN: center') PALERMO 병원 
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 279px')
+                                            p(style='TEXT-ALIGN: center')  Calle. 45c No.22-02
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 177px')
+                                            p(style='TEXT-ALIGN: center')  572-7777
+                                    tr
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 197px')
+                                            p(style='TEXT-ALIGN: center') PARTENON 병원 
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 279px')
+                                            p(style='TEXT-ALIGN: center')  Calle. 74 No. 76-65
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 177px')
+                                            p(style='TEXT-ALIGN: center')  251-7772
+                                    tr
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 197px')
+                                            p(style='TEXT-ALIGN: center') REINA SOFIA URL 병원 
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 279px')
+                                            p(style='TEXT-ALIGN: center')  Cra. 21 No. 127 - 23
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 177px')
+                                            p(style='TEXT-ALIGN: center')  625-2111
+                                    tr
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 197px')
+                                            p(style='TEXT-ALIGN: center') SAN DIEGO 병원 
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 279px')
+                                            p(style='TEXT-ALIGN: center')  Av. 33 No. 14-37
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 177px')
+                                            p(style='TEXT-ALIGN: center')  2451-510
+                                    tr
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 197px')
+                                            p(style='TEXT-ALIGN: center') SAN RAFAEL 병원 
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 279px')
+                                            p(style='TEXT-ALIGN: center')  Cra. 8 No. 17- 45 Sur
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 177px')
+                                            p(style='TEXT-ALIGN: center')  328-2300
+                                    tr
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 197px')
+                                            p(style='TEXT-ALIGN: center') SHAIO 병원 
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 279px')
+                                            p(style='TEXT-ALIGN: center')  Dia. 115a No. 70c-75
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 177px')
+                                            p(style='TEXT-ALIGN: center')  593-8210
+                                    tr
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 197px')
+                                            p(style='TEXT-ALIGN: center') COLSANITAS 병원 
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 279px')
+                                            p(style='TEXT-ALIGN: center')  Cra. 31 No. 125A - 23
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 177px')
+                                            p(style='TEXT-ALIGN: center')  524-0530
+                                    tr
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 197px')
+                                            p(style='TEXT-ALIGN: center') CARDIOINFANTIL 의료재단  
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 279px')
+                                            p(style='TEXT-ALIGN: center')  Calle. 164a No. 26b-21
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 177px')
+                                            p(style='TEXT-ALIGN: center')  667-2742
+                                    tr
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 197px')
+                                            p(style='TEXT-ALIGN: center') Fundacion Centro Medico Santafe  
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 279px')
+                                            p(style='TEXT-ALIGN: center')  Cra.7 No. 117-15
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 177px')
+                                            p(style='TEXT-ALIGN: center')  603-0303
+                                    tr
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 197px')
+                                            p(style='TEXT-ALIGN: center') Sanitas 의료재단 
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 279px')
+                                            p(style='TEXT-ALIGN: center')  Calle 100 #11B-67 OF. 508
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 177px')
+                                            p(style='TEXT-ALIGN: center')  621-0088
+                                    tr
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 197px')
+                                            p(style='TEXT-ALIGN: center') 육군 종합병원 
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 279px')
+                                            p(style='TEXT-ALIGN: center')
+                                                | Tr 5a. No. 49-00
+                                                span#_SESpan_StartCaret
+                                                span#_SESpan_StartCaret
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 177px')
+                                            p(style='TEXT-ALIGN: center')  640-5938
+                                    tr
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 197px')
+                                            p(style='TEXT-ALIGN: center') SAN IGNACIO 종합병원 
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 279px')
+                                            p(style='TEXT-ALIGN: center')  Cra. 7 No. 40-62
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 177px')
+                                            p(style='TEXT-ALIGN: center')  594-6161
+                                    tr
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 197px')
+                                            p(style='TEXT-ALIGN: center') Antiguo Country 종합병원 
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 279px')
+                                            p(style='TEXT-ALIGN: center')  Cra. 18 No. 84-10
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 177px')
+                                            p(style='TEXT-ALIGN: center')  236-0833
+                                    tr
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 197px')
+                                            p(style='TEXT-ALIGN: center') 콜롬비아 적십자 
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 279px')
+                                            p(style='TEXT-ALIGN: center')  Avenida 68 No. 66-31
+                                        td(style='BORDER-TOP: #3f3f3f 1px solid; HEIGHT: 20px; BORDER-RIGHT: #3f3f3f 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #3f3f3f 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #3f3f3f 1px solid; WIDTH: 177px')
+                                            p(style='TEXT-ALIGN: center')  437-6334
+
+append scripts
+    script(src='js/contactDetail.js')
+    //script(src='js/cors.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js', crossorigin='anonymous')

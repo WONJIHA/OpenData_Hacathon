@@ -1,0 +1,90 @@
+extends ../layouts/dashboard.pug
+
+block config
+    - var bodyClass = 'sb-nav-fixed'
+    - var pageTitle = '국가별 긴급 연락처';
+    - var index = true;
+    - var sidenavStyle = 'sb-sidenav-dark'
+
+append css
+    link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', rel='stylesheet', crossorigin='anonymous')
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=', crossorigin='anonymous')
+    link(href='assets/css/contactDetail.css', rel='stylesheet')
+
+block content
+    section.ftco-section.ftco-faqs
+    .container
+        .heading-section.mb-4.mt-5.mt-lg-0.section-title
+            h2#countryName.mb-3 Afghanistan
+        .row
+            .col-lg-6.order-md-last.mb-4
+            .col-lg-12
+                #accordion.myaccordion.w-100.bg-white(aria-multiselectable='true' style='border-radius: 10px; padding: 5%')
+                    div
+                        h3.tit 대사관 연락처
+                        |  ㅇ 주소 : House No. 34, Street No 10, Wazir Akbar Khan Kabul, Afghanistan
+                        br
+                        |  ㅇ 대표번호(근무시간 중) : (93) 20-210-2481
+                        br
+                        |  ㅇ 긴급연락처(사건사고 등 긴급상황 발생 시, 24시간) : (93) 70-735-6492
+                        br
+                        |  ㅇ E-mail :
+                        a(href='mailto:kabul@mofa.go.kr') kabul@mofa.go.kr
+                        br
+                        br
+                        h3.tit 주재국 신고
+                        |  ㅇ 경찰(범죄) 신고 : 119
+                        br
+                        |  ㅇ 화재 신고 : 105
+                        br
+                        |  ㅇ 응급환자(구급차) : 102
+                        br
+                        br
+                        h3.tit 관광통역서비스
+                        |  ㅇ 아프가니스탄은 여행금지국가이며, 단체 여행도 금지되어 있습니다.
+                        br
+                        |  ㅇ Ariana 항공 : 0777 071 333,
+                        a(href='mailto:info@flyariana.com') info@flyariana.com
+                        br
+                        |  ㅇ Safi Airways : 0714 295 1040,
+                        a(href='mailto:info@safiairways.com') info@safiairways.com
+                        br
+                        |  ㅇ Kam Air : 0799 97 4422,
+                        a(href='mailto:helpdesk@kamair.com') helpdesk@kamair.com
+                        br
+                        br
+                        h3.tit 의료기관 연락처
+                        |  ㅇ Wazir Akbar Khan
+                        br
+                        p(style='margin-left: 15px; margin-right: 15px;')
+                            | - Wazir Akbar Khan area, district 10
+                            br
+                            |  - 020 2301 360
+                        br
+                        |  ㅇ ISAF German Hospital
+                        br
+                        p(style='margin-left: 15px; margin-right: 15px;')
+                            | - ISAF Camp Warehouse, district 9, Kabul-Jalalabad Road
+                            br
+                            |  - 0797 191 348
+                        br
+                        |  ㅇ Cure International Hospital
+                        br
+                        p(style='margin-left: 15px; margin-right: 15px;')
+                            | - Darulaman Road, Near the Palace, Kabul
+                            br
+                            |  - 0799 88 30
+                            br
+                            |  - 0799 15 60 47
+                        br
+                        |  ㅇ French Medical Institute for Children
+                        br
+                        p(style='margin-left: 15px; margin-right: 15px;')
+                            | - Behind Kabul Medical University, Aliabad, Kabul, Afghanistan
+                            br
+                            |  - 020 2500 200
+
+append scripts
+    script(src='js/contactDetail.js')
+    //script(src='js/cors.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js', crossorigin='anonymous')

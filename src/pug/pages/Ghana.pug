@@ -1,0 +1,75 @@
+extends ../layouts/dashboard.pug
+
+block config
+    - var bodyClass = 'sb-nav-fixed'
+    - var pageTitle = '국가별 긴급 연락처';
+    - var index = true;
+    - var sidenavStyle = 'sb-sidenav-dark'
+
+append css
+    link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', rel='stylesheet', crossorigin='anonymous')
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=', crossorigin='anonymous')
+    link(href='assets/css/contactDetail.css', rel='stylesheet')
+
+block content
+    section.ftco-section.ftco-faqs
+        .container
+            .heading-section.mb-4.mt-5.mt-lg-0.section-title
+                h2#countryName.mb-3 Ghana
+            .row
+                .col-lg-6.order-md-last.mb-4
+                .col-lg-12
+                    #accordion.myaccordion.w-100.bg-white(aria-multiselectable='true' style='border-radius: 10px; padding: 5%')
+                        div
+                            h3.tit 대사관 연락처
+                            | ㅇ 주소 : No.10, Fifth Avenue Extension, Cantonments, P.O.Box GP 13700, Accra, Ghana
+                            br
+                            |  ㅇ 대표번호(근무시간 중) : (233) 302-771-705, (233) 302-771-757, 776-157, 777-533
+                            br
+                            |  ㅇ 긴급연락처(사건사고 등 긴급상황 발생 시, 24시간) : (233) 244-321-858
+                            br
+                            |  ㅇ E mail :
+                            a(href='mailto:ghana@mofa.go.kr') ghana@mofa.go.kr
+                            br
+                            br
+                            h3.tit 주재국 신고
+                            |  ㅇ 가나 국제전화 국가 식별번호 : 233
+                            br
+                            p(style='margin-left: 15px; margin-right: 15px;') - 경찰 191 , 소방서 192/999, 앰블런스 193
+                            br
+                            |  [아크라]
+                            br
+                            p(style='margin-left: 15px; margin-right: 15px;')
+                                | - Ghana Police Service(경찰청) (233) 302-773-906, (toll free) 18555
+                                br
+                                |  - CID(범죄수사국) 본부 (233) 302-664-611, 665-561
+                                br
+                                |  - AIRPORT 경찰서 (233) 302-777-592
+                                br
+                                |  - Cantonment 경찰서 (233) 302-776-571
+                            br
+                            |  [테마]
+                            br
+                            p(style='margin-left: 15px; margin-right: 15px;')
+                                | - Regional (233) 303-202-259
+                                br
+                                |  - Main Harbour (233) 303-211-601
+                                br
+                                |  - Community(1) (233) 303-202-835
+                                br
+                                |  - Community(2) (233) 303-202-510
+                            br
+                            h3.tit 의료기관 연락처
+                            |  ㅇ Greater Accra Regional Hospital(Ridge Hospital) (233) 302-228-315
+                            br
+                            |  ㅇ Korle-Bu Teaching Hospital (233) 302-228-315
+                            br
+                            |  ㅇ 37 Military Hospital (233) 302-228-315
+                            br
+                            |  ㅇ Tema General Hospital (233) 302-228-315
+                            br
+
+append scripts
+    script(src='js/contactDetail.js')
+    //script(src='js/cors.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js', crossorigin='anonymous')

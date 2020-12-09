@@ -1,0 +1,44 @@
+extends ../layouts/dashboard.pug
+
+block config
+    - var bodyClass = 'sb-nav-fixed'
+    - var pageTitle = '국가별 긴급 연락처';
+    - var index = true;
+    - var sidenavStyle = 'sb-sidenav-dark'
+
+append css
+    link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', rel='stylesheet', crossorigin='anonymous')
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=', crossorigin='anonymous')
+    link(href='assets/css/contactDetail.css', rel='stylesheet')
+
+block content
+    section.ftco-section.ftco-faqs
+        .container
+            .heading-section.mb-4.mt-5.mt-lg-0.section-title
+                h2#countryName.mb-3 Somalia
+            .row
+                .col-lg-6.order-md-last.mb-4
+                .col-lg-12
+                    #accordion.myaccordion.w-100.bg-white(aria-multiselectable='true' style='border-radius: 10px; padding: 5%')
+                        div
+                            h3.tit 대사관 연락처
+                            |  ※ 소말리아에는 우리대사관이 없으며, 주케냐한국대사관이 겸임하고 있습니다.
+                            br
+                            |  ㅇ 주소: 1st, 2 nd Fl. Misha Tower, Westlands Road, Nairobi, Kenya
+                            br
+                            |  ㅇ 대표번호 : (254) 20-361-5109
+                            br
+                            |  ㅇ 긴급연락처 : (254) 708-984-891
+                            br
+                            |  ㅇ 이메일 :
+                            a(href='mailto:emb-ke@mofa.go.kr') emb-ke@mofa.go.kr
+                            br
+                            br
+                            h3.tit 의료기관 연락처
+                            |  ㅇ 하르게이사(Hargeisa)에는 기본적인 병원 시설이 있지만 아주 열악합니다.
+                            br
+
+append scripts
+    script(src='js/contactDetail.js')
+    //script(src='js/cors.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js', crossorigin='anonymous')

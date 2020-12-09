@@ -1,0 +1,82 @@
+extends ../layouts/dashboard.pug
+
+block config
+    - var bodyClass = 'sb-nav-fixed'
+    - var pageTitle = '국가별 긴급 연락처';
+    - var index = true;
+    - var sidenavStyle = 'sb-sidenav-dark'
+
+append css
+    link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', rel='stylesheet', crossorigin='anonymous')
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=', crossorigin='anonymous')
+    link(href='assets/css/contactDetail.css', rel='stylesheet')
+
+block content
+    section.ftco-section.ftco-faqs
+    .container
+        .heading-section.mb-4.mt-5.mt-lg-0.section-title
+            h2#countryName.mb-3 Sudan
+        .row
+            .col-lg-6.order-md-last.mb-4
+            .col-lg-12
+                #accordion.myaccordion.w-100.bg-white(aria-multiselectable='true' style='border-radius: 10px; padding: 5%')
+                    div
+                        h3.tit 대사관 연락처
+                        |  ㅇ 주소 : House No55, Al-Jazira St.56, Khartoum2, P.O.Box2414, Khartoum, Sudan
+                        br
+                        |  ㅇ 대표번호(근무시간 중) : (249) 1-8358-0031 (현지에서 걸 때는 (0)1-8358-0031)
+                        br
+                        |  ㅇ 긴급연락처(사건사고 등 긴급상황 발생 시, 24시간) : (249) 9-1217-2813
+                        br
+                        |  ㅇ 이메일 :
+                        a(href='mailto:sudan@mofa.go.kr') sudan@mofa.go.kr
+                        br
+                        br
+                        h3.tit 주재국 신고
+                        |  ㅇ 범죄 신고는 999
+                        br
+                        |  ㅇ 화재사고
+                        br
+                        p(style='margin-left: 15px; margin-right: 15px;')
+                            | - 카르툼(Khartoum) : 01-8377-4444
+                            br
+                            |  - 카르툼 노스(Khartoum North) : 01-8531-3113
+                            br
+                            |  - 옴두르만(Omdurman) : 01-8755-2152
+                        |  ㅇ 화재신고는 지역별로 번호가 다르며 직접 연락해야 합니다. 한국에서 걸 때는 국가번호 +249에 0을 제외한 번호를 입력하시면 됩니다.
+                        br
+                        br
+                        h3.tit 의료기관 연락처
+                        |  ㅇ 기본적 진료 및 치료는 현지에서도 가능하나, 심각한 질병 발생 시에는 제3국 치료가 불가피합니다. 응급 후송은 각 병원에 직접 연락해야 합니다.
+                        br
+                        br
+                        |  ㅇ 닥터스 클리닉(Doctors Clinic)
+                        br
+                        p(style='margin-left: 15px; margin-right: 15px;')
+                            | - 주소 : Amarat37, Africa Road, P.O.Box903, Khartoum, Sudan
+                            br
+                            |  - 전화번호 : +249-1-8347-1973(현지에서 걸 때는 01-8347-1973)
+                        br
+                        |  ㅇ 임페리얼 병원(Imperial Hospital)
+                        br
+                        p(style='margin-left: 15px; margin-right: 15px;')
+                            | - 주소 : Al Negomi Road, P.O.Box1032, Khartoum, Sudan
+                            br
+                            |  - 전화번호 : +249-1-8376-6773 (현지에서 걸 때는01-8376-6773)
+                        br
+                        |  ㅇ 로얄케어(Royal Care International Hospital)
+                        br
+                        p(style='margin-left: 15px; margin-right: 15px;')
+                            | - 주소 : Burri Aldraisa, Abualgasim Hashim Road
+                            br
+                            |  - 전화번호 : +249-1-8325-2462, +249-1-5655-0150 (응급실 : +249-9-2213-7904)
+                        br
+                        |  ㅇ 간단한 치료(피검사 등)는 닥터스 클리닉(Doctors Clinic), 응급상황 등 대형병원을 찾아야 할 경우 임페리얼 병원(Imperial Hospital) 또는 로얄케어병원(Royal Care International Hospital)을 추천합니다.
+                        br
+                        |  ㅇ 말라리아가 의심되면 즉시 병원에 가서 피검사를 실시하여야 합니다. 말라리아 감염 여부를 검사 후 즉시 확인할 수 있기 때문에 신속한 조치가 필요합니다.
+                        br
+
+append scripts
+    script(src='js/contactDetail.js')
+    //script(src='js/cors.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js', crossorigin='anonymous')

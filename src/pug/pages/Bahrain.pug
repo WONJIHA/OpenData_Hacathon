@@ -1,0 +1,72 @@
+extends ../layouts/dashboard.pug
+
+block config
+    - var bodyClass = 'sb-nav-fixed'
+    - var pageTitle = '국가별 긴급 연락처';
+    - var index = true;
+    - var sidenavStyle = 'sb-sidenav-dark'
+
+append css
+    link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', rel='stylesheet', crossorigin='anonymous')
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=', crossorigin='anonymous')
+    link(href='assets/css/contactDetail.css', rel='stylesheet')
+
+block content
+    section.ftco-section.ftco-faqs
+    .container
+        .heading-section.mb-4.mt-5.mt-lg-0.section-title
+            h2#countryName.mb-3 Bahrain
+        .row
+            .col-lg-6.order-md-last.mb-4
+            .col-lg-12
+                #accordion.myaccordion.w-100.bg-white(aria-multiselectable='true' style='border-radius: 10px; padding: 5%')
+                    div
+                        h3.tit 대사관 연락처
+                        |  ㅇ 주소 : Villa 401, Road 915, Block 309, Salmaniya, Manama, Kingdom of Bahrain
+                        br
+                        |  ㅇ 대표번호(근무시간 중) : (973) 1753-1120
+                        br
+                        |  ㅇ 긴급연락처(사건사고 등 긴급상황 발생 시, 24시간) : (973) 6674-4737
+                        br
+                        |  ㅇ E-mail :
+                        a(href='mailto:korembbah@mofa.go.kr') korembbah@mofa.go.kr
+                        br
+                        br
+                        h3.tit 주재국 신고
+                        |  ㅇ 범죄신고 : 999
+                        br
+                        |  ㅇ 화재신고 : 999
+                        br
+                        |  ㅇ 응급의료 : 999
+                        br
+                        |  ㅇ 교통사고 : 199
+                        br
+                        |  ㅇ 전화번호 안내 : 181
+                        br
+                        br
+                        h3.tit 의료기관 연락처
+                        |  ㅇ 한국에서 전화하는 경우: 973 누른 후 해당전화번호
+                        br
+                        |  ㅇ 현지에서 전화하는 경우: 해당전화번호
+                        br
+                        |  ㅇ 의료기관 연락처: 비교적 우수한 보건 의료시설을 보유하고 있으며, 의료진은 대부분 제3국인(인도, 필리핀, 요르단인) 출신으로 영어 소통이 가능합니다.
+                        br
+                        p(style='margin-left: 15px; margin-right: 15px;') - 구급차 요청: 999 (현지 번호)
+                        |  ㅇ Salmaniya 병원(국립) : 973) 1728-8888
+                        br
+                        |  ㅇ American Mission Hospital : 973) 1725-3447
+                        br
+                        |  ㅇ Bahrain Specialist Hospital : 973) 1781-2222
+                        br
+                        br
+                        |  ㅇ 약국에서는 수입 약품들이 많이 구비되어 있으며, 항생제등 구입 시 처방전이 필요하나, 감기약, 진통제, 알레르기 의약품 등 단순 의약품은 처방전 없이도 구입이 가능합니다.
+                        br
+                        |  ㅇ 특별한 풍토병은 없으나, 이슬람 성지순례시기(무슬림들이 사우디 이슬람 성지로 모이기 위해 바레인을 경유하는 경우가 많음)에 각종 인플루엔자와 뇌막염이 발생할 수 있어 어린이들은 필수적으로 예방접종하여야 합니다.
+                        br
+                        |  ㅇ 먼지가 심한 사막지역이므로 상처를 입었을 경우 파상풍 등에 주의하여야 합니다.
+                        br
+
+append scripts
+    script(src='js/contactDetail.js')
+    //script(src='js/cors.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js', crossorigin='anonymous')

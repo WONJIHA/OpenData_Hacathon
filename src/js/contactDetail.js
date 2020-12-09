@@ -4,35 +4,36 @@ $(document).ready(function() {
     var myurl = "http://apis.data.go.kr/1262000/ContactService/getContactList?serviceKey=yrZ2sPGNKzxFIizOwLKGvhg5w76gFuzzCvdFxfrHDGNmjVeuQ0KEe%2BqY639AQVgeeOBYMs4ZgD1xap011UcUKw%3D%3D&numOfRows=197&pageNo=1&countryEnName=" + name;
     // var myurl = "http://apis.data.go.kr/1262000/ContactService/getContactList?serviceKey=yrZ2sPGNKzxFIizOwLKGvhg5w76gFuzzCvdFxfrHDGNmjVeuQ0KEe%2BqY639AQVgeeOBYMs4ZgD1xap011UcUKw%3D%3D&numOfRows=197&pageNo=1";
 
-    $.ajax({
-        url : myurl,
-        dataType : "xml",
-        success : function (data){
-            $(data).find("item").each(function (){
-                // var str = "";
-                var countryName = "";
-                // var continent = "";
-                // var imgUrl = "";
+    // $.ajax({
+    //     url : myurl,
+    //     dataType : "xml",
+    //     success : function (data){
+    //         $(data).find("item").each(function (){
+    //             // var str = "";
+    //             var countryName = "";
+    //             // var continent = "";
+    //             // var imgUrl = "";
+    //
+    //             var contact = "";
+    //
+    //             countryName += $(this).find("countryName").text();
+    //             countryName += "(";
+    //             countryName += $(this).find("countryEnName").text();
+    //             countryName += ")"
+    //             // continent += $(this).find("continent").text();
+    //             // imgUrl += $(this).find("imgUrl").text();
+    //             contact += $(this).find("contact").text();
+    //
+    //             $("#countryName").append(countryName);
+    //             $("#accordion").prepend(contact);
+    //         })
+    //     },
+    //     error : function() {
+    //         alert("error");
+    //     }
+    // })
 
-                var contact = "";
-
-                countryName += $(this).find("countryName").text();
-                countryName += "(";
-                countryName += $(this).find("countryEnName").text();
-                countryName += ")"
-                // continent += $(this).find("continent").text();
-                // imgUrl += $(this).find("imgUrl").text();
-                contact += $(this).find("contact").text();
-
-                $("#countryName").append(countryName);
-                $("#accordion").prepend(contact);
-            })
-        },
-        error : function() {
-            alert("error");
-        }
-    })
-
+    // 지도 부분
     // var target = document.getElementsByTagName("h3");
     // target.className = "bg-dark";
 

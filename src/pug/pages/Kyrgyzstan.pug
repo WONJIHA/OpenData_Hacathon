@@ -1,0 +1,68 @@
+extends ../layouts/dashboard.pug
+
+block config
+    - var bodyClass = 'sb-nav-fixed'
+    - var pageTitle = '국가별 긴급 연락처';
+    - var index = true;
+    - var sidenavStyle = 'sb-sidenav-dark'
+
+append css
+    link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', rel='stylesheet', crossorigin='anonymous')
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=', crossorigin='anonymous')
+    link(href='assets/css/contactDetail.css', rel='stylesheet')
+
+block content
+    section.ftco-section.ftco-faqs
+    .container
+        .heading-section.mb-4.mt-5.mt-lg-0.section-title
+            h2#countryName.mb-3 Kyrgyzstan
+        .row
+            .col-lg-6.order-md-last.mb-4
+            .col-lg-12
+                #accordion.myaccordion.w-100.bg-white(aria-multiselectable='true' style='border-radius: 10px; padding: 5%')
+                    div
+                        h3.tit 대사관 연락처
+                        |  ㅇ 주소 : 키르기즈 비쉬켁시 아훈바예바 거리 35번지(까를라 막사 거리와 교차로 4거리)
+                        br
+                        |  ㅇ 대표번호(근무시간 중) : (996) 312-579-771
+                        br
+                        |  ㅇ E-mail :
+                        a(href='mailto:korea.kg@mofa.go.kr') korea.kg@mofa.go.kr
+                        br
+                        |  ㅇ 긴급연락처(사건사고 등 긴급상황 발생 시, 24시간) : (996) 500-579-773
+                        br
+                        br
+                        h3.tit 주재국 신고
+                        |  ㅇ 화재신고101
+                        br
+                        |  ㅇ 범죄신고102
+                        br
+                        |  ㅇ 응급의료103
+                        br
+                        |  ㅇ 전화번호 안내 106(무료), 161(유료)
+                        bra
+                        br
+                        h3.tit 의료기관 연락처
+                        |  ㅇ 키르기즈에서는 응급환자가 발생할 경우 103번으로 전화를 걸어 도움을 요청할 수 있으나, 국가가 운영하는 응급센터(103번)는 연락 후 도착까지 상당시간이 소요되는 경우가 많습니다.
+                        br
+                        br
+                        |  ㅇ 응급환자 발생시 개인이 운영하는 응급센터(161번)으로 전화를 걸어 도움을 요청하시는 것도 좋습니다.
+                        br
+                        br
+                        |  ㅇ 외국인이 주로 이용하는 개인병원은 아래와 같습니다.
+                        br
+                        p(style='margin-left: 15px; margin-right: 15px;') - NEO MED (검진센터) : (+996)-312-90-60-90
+                        p(style='margin-left: 25px; margin-right: 25px;') * (주소 : 오로조베코바 46)
+                        p(style='margin-left: 15px; margin-right: 15px;') - MEDI POL (가정의학) : (+996)-312-54-78-13
+                        p(style='margin-left: 25px; margin-right: 25px;') * (주소 : 아바야 71)
+                        p(style='margin-left: 15px; margin-right: 15px;') - MALISH(소아과) : (+996)-312-30-18-18
+                        p(style='margin-left: 25px; margin-right: 25px;') * (주소 : 레니나 67)
+                        p(style='margin-left: 15px; margin-right: 15px;') - KAINOS DENTAL CLINIC (치과) : (+996)-312-31-18-59
+                        p(style='margin-left: 25px; margin-right: 25px;') * (주소 : 쓰듸꼬바 178)
+                        p(style='margin-left: 15px; margin-right: 15px;') - KAIROS DENTAL CLINIC (치과) : (+996)-312-61-23-02
+                        p(style='margin-left: 25px; margin-right: 25px;') * (주소 : 루스꿀로바 10)
+
+append scripts
+    script(src='js/contactDetail.js')
+    //script(src='js/cors.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js', crossorigin='anonymous')

@@ -13,8 +13,436 @@ append css
 block content
     .page-content.container.note-has-grid
         section#services.section.services-section
-            div
-                #insertHere.row
+            .row
+                .col-sm-6.col-lg-4.all-category(onclick="goDetail('Ghana')")
+                    .feature-box-1.bg-white
+                        .media.align-items-center
+                            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=FILE_000000000010504&file_sn=1')")
+                            .media-body.overflow-hidden
+                                h5.card-text.mb-0 &#xAC00;&#xB098;(Ghana)
+                                p.card-text.text-uppercase.text-muted &#xC911;&#xB3D9;/&#xC544;&#xD504;&#xB9AC;&#xCE74;
+                .col-sm-6.col-lg-4.all-category(onclick="goDetail('Niue')")
+                    .feature-box-1.bg-white
+                        .media.align-items-center
+                            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=FILE_000000000008142&file_sn=1')")
+                            .media-body.overflow-hidden
+                                h5.card-text.mb-0 &#xB2C8;&#xC6B0;&#xC5D0;(Niue)
+                                p.card-text.text-uppercase.text-muted &#xC911;&#xB3D9;/&#xC544;&#xD504;&#xB9AC;&#xCE74;
+                .col-sm-6.col-lg-4.all-category(onclick="goDetail('Macau')")
+                    .feature-box-1.bg-white
+                        .media.align-items-center
+                            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=FILE_000000000006873&file_sn=1')")
+                            .media-body.overflow-hidden
+                                h5.card-text.mb-0 &#xB9C8;&#xCE74;&#xC624;(&#xC911;&#xAD6D;)(Macau)
+                                p.card-text.text-uppercase.text-muted &#xC544;&#xC2DC;&#xC544;/&#xD0DC;&#xD3C9;&#xC591;
+                .col-sm-6.col-lg-4.all-category(onclick="goDetail('hongkong')")
+                    .feature-box-1.bg-white
+                        .media.align-items-center
+                            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=FILE_000000000006687&file_sn=1')")
+                            .media-body.overflow-hidden
+                                h5.card-text.mb-0 &#xD64D;&#xCF69;(&#xC911;&#xAD6D;)(hongkong)
+                                p.card-text.text-uppercase.text-muted &#xC544;&#xC2DC;&#xC544;/&#xD0DC;&#xD3C9;&#xC591;
+                .col-sm-6.col-lg-4.all-category(onclick="goDetail('Libya')")
+                    .feature-box-1.bg-white
+                        .media.align-items-center
+                            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=FILE_000000000002230&file_sn=1')")
+                            .media-body.overflow-hidden
+                                h5.card-text.mb-0 &#xB9AC;&#xBE44;&#xC544;(Libya)
+                                p.card-text.text-uppercase.text-muted &#xC911;&#xB3D9;/&#xC544;&#xD504;&#xB9AC;&#xCE74;
+                .col-sm-6.col-lg-4.all-category(onclick="goDetail('Colombia')")
+                    .feature-box-1.bg-white
+                        .media.align-items-center
+                            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_213&file_sn=1')")
+                            .media-body.overflow-hidden
+                                h5.card-text.mb-0 &#xCF5C;&#xB86C;&#xBE44;&#xC544;(Colombia)
+                                p.card-text.text-uppercase.text-muted &#xBBF8;&#xC8FC;
+                .col-sm-6.col-lg-4.all-category(onclick="goDetail('Syria')")
+                    .feature-box-1.bg-white
+                        .media.align-items-center
+                            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_131&file_sn=1')")
+                            .media-body.overflow-hidden
+                                h5.card-text.mb-0 &#xC2DC;&#xB9AC;&#xC544;(Syria)
+                                p.card-text.text-uppercase.text-muted &#xC911;&#xB3D9;/&#xC544;&#xD504;&#xB9AC;&#xCE74;
+                .col-sm-6.col-lg-4.all-category(onclick="goDetail('Cook Island')")
+                    .feature-box-1.bg-white
+                        .media.align-items-center
+                            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_330&file_sn=1')")
+                            .media-body.overflow-hidden
+                                h5.card-text.mb-0 &#xCFE1;&#xC81C;&#xB3C4;(Cook Island)
+                                p.card-text.text-uppercase.text-muted &#xC544;&#xC2DC;&#xC544;/&#xD0DC;&#xD3C9;&#xC591;
+                .col-sm-6.col-lg-4.all-category(onclick="goDetail('Nigeria')")
+                    .feature-box-1.bg-white
+                        .media.align-items-center
+                            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_18&file_sn=1')")
+                            .media-body.overflow-hidden
+                                h5.card-text.mb-0 &#xB098;&#xC774;&#xC9C0;&#xB9AC;&#xC544;(Nigeria)
+                                p.card-text.text-uppercase.text-muted &#xC911;&#xB3D9;/&#xC544;&#xD504;&#xB9AC;&#xCE74;
+                .col-sm-6.col-lg-4.all-category(onclick="goDetail('Somalia')")
+                    .feature-box-1.bg-white
+                        .media.align-items-center
+                            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_120&file_sn=1')")
+                            .media-body.overflow-hidden
+                                h5.card-text.mb-0 &#xC18C;&#xB9D0;&#xB9AC;&#xC544;(Somalia)
+                                p.card-text.text-uppercase.text-muted &#xC911;&#xB3D9;/&#xC544;&#xD504;&#xB9AC;&#xCE74;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('Iraq')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_174&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xC774;&#xB77C;&#xD06C;(Iraq)
+                //                p.card-text.text-uppercase.text-muted &#xC911;&#xB3D9;/&#xC544;&#xD504;&#xB9AC;&#xCE74;
+                .col-sm-6.col-lg-4.all-category(onclick="goDetail('Afghanistan')")
+                    .feature-box-1.bg-white
+                        .media.align-items-center
+                            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_284&file_sn=1')")
+                            .media-body.overflow-hidden
+                                h5.card-text.mb-0 &#xC544;&#xD504;&#xAC00;&#xB2C8;&#xC2A4;&#xD0C4;(Afghanistan)
+                                p.card-text.text-uppercase.text-muted &#xC544;&#xC2DC;&#xC544;/&#xD0DC;&#xD3C9;&#xC591;
+                .col-sm-6.col-lg-4.all-category(onclick="goDetail('Yemen')")
+                    .feature-box-1.bg-white
+                        .media.align-items-center
+                            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_294&file_sn=1')")
+                            .media-body.overflow-hidden
+                                h5.card-text.mb-0 &#xC608;&#xB9E8;(Yemen)
+                                p.card-text.text-uppercase.text-muted &#xC911;&#xB3D9;/&#xC544;&#xD504;&#xB9AC;&#xCE74;
+                .col-sm-6.col-lg-4.all-category(onclick="goDetail('Azerbaijan')")
+                    .feature-box-1.bg-white
+                        .media.align-items-center
+                            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_335&file_sn=1')")
+                            .media-body.overflow-hidden
+                                h5.card-text.mb-0 &#xC544;&#xC81C;&#xB974;&#xBC14;&#xC774;&#xC794;(Azerbaijan)
+                                p.card-text.text-uppercase.text-muted &#xC720;&#xB7FD;
+                .col-sm-6.col-lg-4.all-category(onclick="goDetail('Sudan')")
+                    .feature-box-1.bg-white
+                        .media.align-items-center
+                            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_122&file_sn=1')")
+                            .media-body.overflow-hidden
+                                h5.card-text.mb-0 &#xC218;&#xB2E8;(Sudan)
+                                p.card-text.text-uppercase.text-muted &#xC911;&#xB3D9;/&#xC544;&#xD504;&#xB9AC;&#xCE74;
+                .col-sm-6.col-lg-4.all-category(onclick="goDetail('Bahrain')")
+                    .feature-box-1.bg-white
+                        .media.align-items-center
+                            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_288&file_sn=1')")
+                            .media-body.overflow-hidden
+                                h5.card-text.mb-0 &#xBC14;&#xB808;&#xC778;(Bahrain)
+                                p.card-text.text-uppercase.text-muted &#xC911;&#xB3D9;/&#xC544;&#xD504;&#xB9AC;&#xCE74;
+                .col-sm-6.col-lg-4.all-category(onclick="goDetail('Kyrgyzstan')")
+                    .feature-box-1.bg-white
+                        .media.align-items-center
+                            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_301&file_sn=1')")
+                            .media-body.overflow-hidden
+                                h5.card-text.mb-0 &#xD0A4;&#xB974;&#xAE30;&#xC2A4;&#xC2A4;&#xD0C4;(Kyrgyzstan)
+                                p.card-text.text-uppercase.text-muted &#xC544;&#xC2DC;&#xC544;/&#xD0DC;&#xD3C9;&#xC591;
+                .col-sm-6.col-lg-4.all-category(onclick="goDetail('Tajikistan')")
+                    .feature-box-1.bg-white
+                        .media.align-items-center
+                            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_302&file_sn=1')")
+                            .media-body.overflow-hidden
+                                h5.card-text.mb-0 &#xD0C0;&#xC9C0;&#xD0A4;&#xC2A4;&#xD0C4;(Tajikistan)
+                                p.card-text.text-uppercase.text-muted &#xC544;&#xC2DC;&#xC544;/&#xD0DC;&#xD3C9;&#xC591;
+                .col-sm-6.col-lg-4.all-category(onclick="goDetail('Eritrea')")
+                    .feature-box-1.bg-white
+                        .media.align-items-center
+                            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_338&file_sn=1')")
+                            .media-body.overflow-hidden
+                                h5.card-text.mb-0 &#xC5D0;&#xB9AC;&#xD2B8;&#xB808;&#xC544;(Eritrea)
+                                p.card-text.text-uppercase.text-muted &#xC911;&#xB3D9;/&#xC544;&#xD504;&#xB9AC;&#xCE74;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('Kosovo')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_367&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xCF54;&#xC18C;&#xBCF4;(Kosovo)
+                //                p.card-text.text-uppercase.text-muted &#xC720;&#xB7FD;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('Liberia')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_37&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xB77C;&#xC774;&#xBCA0;&#xB9AC;&#xC544;(Liberia)
+                //                p.card-text.text-uppercase.text-muted &#xC911;&#xB3D9;/&#xC544;&#xD504;&#xB9AC;&#xCE74;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('Republic of South Sudan')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_373&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xB0A8;&#xC218;&#xB2E8;(Republic of South Sudan)
+                //                p.card-text.text-uppercase.text-muted &#xC911;&#xB3D9;/&#xC544;&#xD504;&#xB9AC;&#xCE74;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('Rwanda')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_45&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xB974;&#xC644;&#xB2E4;(Rwanda)
+                //                p.card-text.text-uppercase.text-muted &#xC911;&#xB3D9;/&#xC544;&#xD504;&#xB9AC;&#xCE74;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('Myanmar')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_75&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xBBF8;&#xC580;&#xB9C8;(Myanmar)
+                //                p.card-text.text-uppercase.text-muted &#xC544;&#xC2DC;&#xC544;/&#xD0DC;&#xD3C9;&#xC591;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('Bangladesh')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_82&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xBC29;&#xAE00;&#xB77C;&#xB370;&#xC2DC;(Bangladesh)
+                //                p.card-text.text-uppercase.text-muted &#xC544;&#xC2DC;&#xC544;/&#xD0DC;&#xD3C9;&#xC591;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('Burkina Faso')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_94&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xBD80;&#xB974;&#xD0A4;&#xB098;&#xD30C;&#xC18C;(Burkina Faso)
+                //                p.card-text.text-uppercase.text-muted &#xC911;&#xB3D9;/&#xC544;&#xD504;&#xB9AC;&#xCE74;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('Tanzania')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_225&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xD0C4;&#xC790;&#xB2C8;&#xC544;(Tanzania)
+                //                p.card-text.text-uppercase.text-muted &#xC911;&#xB3D9;/&#xC544;&#xD504;&#xB9AC;&#xCE74;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('Thailand')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_260&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xD0DC;&#xAD6D;(Thailand)
+                //                p.card-text.text-uppercase.text-muted &#xC544;&#xC2DC;&#xC544;/&#xD0DC;&#xD3C9;&#xC591;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('Georgia')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_332&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xC870;&#xC9C0;&#xC544;(Georgia)
+                //                p.card-text.text-uppercase.text-muted &#xC720;&#xB7FD;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('China')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_189&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xC911;&#xAD6D;(China)
+                //                p.card-text.text-uppercase.text-muted &#xC544;&#xC2DC;&#xC544;/&#xD0DC;&#xD3C9;&#xC591;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('Grenada')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_316&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xADF8;&#xB808;&#xB098;&#xB2E4;(Grenada)
+                //                p.card-text.text-uppercase.text-muted &#xBBF8;&#xC8FC;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('Philippines')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_252&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xD544;&#xB9AC;&#xD540;(Philippines)
+                //                p.card-text.text-uppercase.text-muted &#xC544;&#xC2DC;&#xC544;/&#xD0DC;&#xD3C9;&#xC591;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('Cote d lvoire')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_212&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xCF54;&#xD2B8;&#xB514;&#xBD80;&#xC544;&#xB974;(Cote d lvoire)
+                //                p.card-text.text-uppercase.text-muted &#xC911;&#xB3D9;/&#xC544;&#xD504;&#xB9AC;&#xCE74;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('Japan')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_183&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xC77C;&#xBCF8;(Japan)
+                //                p.card-text.text-uppercase.text-muted &#xC544;&#xC2DC;&#xC544;/&#xD0DC;&#xD3C9;&#xC591;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('Russia')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_39&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xB7EC;&#xC2DC;&#xC544;(Russia)
+                //                p.card-text.text-uppercase.text-muted &#xC720;&#xB7FD;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('United Arab Emirates')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_135&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xC544;&#xB78D;&#xC5D0;&#xBBF8;&#xB9AC;&#xD2B8;(United Arab Emirates)
+                //                p.card-text.text-uppercase.text-muted &#xC911;&#xB3D9;/&#xC544;&#xD504;&#xB9AC;&#xCE74;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('Belize')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_319&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xBCA8;&#xB9AC;&#xC988;(Belize)
+                //                p.card-text.text-uppercase.text-muted &#xBBF8;&#xC8FC;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('Cuba')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_327&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xCFE0;&#xBC14;(Cuba)
+                //                p.card-text.text-uppercase.text-muted &#xBBF8;&#xC8FC;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('Cambodia')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_259&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xCE84;&#xBCF4;&#xB514;&#xC544;(Cambodia)
+                //                p.card-text.text-uppercase.text-muted &#xC544;&#xC2DC;&#xC544;/&#xD0DC;&#xD3C9;&#xC591;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('Lithuania')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_345&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xB9AC;&#xD22C;&#xC544;&#xB2C8;&#xC544;(Lithuania)
+                //                p.card-text.text-uppercase.text-muted &#xC720;&#xB7FD;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('Chile')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_197&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xCE60;&#xB808;(Chile)
+                //                p.card-text.text-uppercase.text-muted &#xBBF8;&#xC8FC;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('Algeria')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_150&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xC54C;&#xC81C;&#xB9AC;(Algeria)
+                //                p.card-text.text-uppercase.text-muted &#xC911;&#xB3D9;/&#xC544;&#xD504;&#xB9AC;&#xCE74;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('Republic of South Africa')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_20&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xB0A8;&#xC544;&#xD504;&#xB9AC;&#xCE74;&#xACF5;&#xD654;&#xAD6D;(Republic of South Africa)
+                //                p.card-text.text-uppercase.text-muted &#xC911;&#xB3D9;/&#xC544;&#xD504;&#xB9AC;&#xCE74;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('Czech Republic')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_195&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xCCB4;&#xCF54;(Czech Republic)
+                //                p.card-text.text-uppercase.text-muted &#xC720;&#xB7FD;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('India')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_285&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xC778;&#xB3C4;(India)
+                //                p.card-text.text-uppercase.text-muted &#xC544;&#xC2DC;&#xC544;/&#xD0DC;&#xD3C9;&#xC591;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('Sri Lanka')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_124&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xC2A4;&#xB9AC;&#xB791;&#xCE74;(Sri Lanka)
+                //                p.card-text.text-uppercase.text-muted &#xC544;&#xC2DC;&#xC544;/&#xD0DC;&#xD3C9;&#xC591;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('El Salvador')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_157&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xC5D8;&#xC0B4;&#xBC14;&#xB3C4;&#xB974;(El Salvador)
+                //                p.card-text.text-uppercase.text-muted &#xBBF8;&#xC8FC;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('Jordan')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_165&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xC694;&#xB974;&#xB2E8;(Jordan)
+                //                p.card-text.text-uppercase.text-muted &#xC911;&#xB3D9;/&#xC544;&#xD504;&#xB9AC;&#xCE74;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('Italy')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_179&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xC774;&#xD0C8;&#xB9AC;&#xC544;(Italy)
+                //                p.card-text.text-uppercase.text-muted &#xC720;&#xB7FD;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('Djibouti')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_191&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xC9C0;&#xBD80;&#xD2F0;(Djibouti)
+                //                p.card-text.text-uppercase.text-muted &#xC911;&#xB3D9;/&#xC544;&#xD504;&#xB9AC;&#xCE74;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('Canada')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_204&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xCE90;&#xB098;&#xB2E4;(Canada)
+                //                p.card-text.text-uppercase.text-muted &#xBBF8;&#xC8FC;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('Fiji')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_249&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xD53C;&#xC9C0;(Fiji)
+                //                p.card-text.text-uppercase.text-muted &#xC544;&#xC2DC;&#xC544;/&#xD0DC;&#xD3C9;&#xC591;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('Australia')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_255&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xD638;&#xC8FC;(Australia)
+                //                p.card-text.text-uppercase.text-muted &#xC544;&#xC2DC;&#xC544;/&#xD0DC;&#xD3C9;&#xC591;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('Malta')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_297&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xBAB0;&#xD0C0;(Malta)
+                //                p.card-text.text-uppercase.text-muted &#xC720;&#xB7FD;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('San Marino')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_299&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xC0B0;&#xB9C8;&#xB9AC;&#xB178;(San Marino)
+                //                p.card-text.text-uppercase.text-muted &#xC720;&#xB7FD;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('Nauru')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_306&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xB098;&#xC6B0;&#xB8E8;(Nauru)
+                //                p.card-text.text-uppercase.text-muted &#xC544;&#xC2DC;&#xC544;/&#xD0DC;&#xD3C9;&#xC591;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('Marshall Islands')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_307&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xB9C8;&#xC15C;&#xC81C;&#xB3C4;(Marshall Island)
+                //                p.card-text.text-uppercase.text-muted &#xC544;&#xC2DC;&#xC544;/&#xD0DC;&#xD3C9;&#xC591;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('Micronesia')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_308&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xBBF8;&#xD06C;&#xB85C;&#xB124;&#xC2DC;&#xC544;(Micronesia)
+                //                p.card-text.text-uppercase.text-muted &#xC544;&#xC2DC;&#xC544;/&#xD0DC;&#xD3C9;&#xC591;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('Maldives')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_309&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xBAB0;&#xB514;&#xBE0C;(Maldives)
+                //                p.card-text.text-uppercase.text-muted &#xC544;&#xC2DC;&#xC544;/&#xD0DC;&#xD3C9;&#xC591;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('Denmark')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_31&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xB374;&#xB9C8;&#xD06C;(Denmark)
+                //                p.card-text.text-uppercase.text-muted &#xC720;&#xB7FD;
+                //.col-sm-6.col-lg-4.all-category(onclick="goDetail('Tarawa')")
+                //    .feature-box-1.bg-white
+                //        .media.align-items-center
+                //            span#flag.avatar.avatar-xl.mr-3(style="background-image: url('http://www.0404.go.kr/imgsrc.mofa?atch_file_id=COUNTRY_312&file_sn=1')")
+                //            .media-body.overflow-hidden
+                //                h5.card-text.mb-0 &#xD0C0;&#xB77C;&#xC640;(Tarawa)
+                //                p.card-text.text-uppercase.text-muted &#xC544;&#xC2DC;&#xC544;/&#xD0DC;&#xD3C9;&#xC591;
+                // <div class="row" id="insertHere"></div>
+                // </div>
 
 append scripts
     script(src='js/contact.js')
