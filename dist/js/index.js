@@ -9,12 +9,11 @@ $(document).ready(function () {
     var dateToDisplay = "(기준 : " + year + "년 " + month + "월 " + day + "일)"
     $("#insertDate").append(dateToDisplay);
 
-    var alr;
-    
+    var request = require('request');    
     var myurl = "http://openapi.data.go.kr/openapi/service/rest/Covid19/getCovid19NatInfStateJson?serviceKey=yrZ2sPGNKzxFIizOwLKGvhg5w76gFuzzCvdFxfrHDGNmjVeuQ0KEe%2BqY639AQVgeeOBYMs4ZgD1xap011UcUKw%3D%3D&pageNo=1&startCreateDt=" + updateDate + "&endCreateDt=" + updateDate;
     $.ajax({
         url : myurl,
-        dataType : "jsonp",
+        dataType : "xml",
         success : function (data) {
             $(data).find("item").each(function (){
                 var str = "<tr>\n" + "<td>"
@@ -44,8 +43,26 @@ $(document).ready(function () {
         }
     })
 
-    alr : function(alert) {
-        alert("준비중 입니다");
-    }
 
 })
+
+/* NodeJs 샘플 코드 */
+
+
+
+
+// var url = 'http://openapi.data.go.kr/openapi/service/rest/Covid19/getCovid19NatInfStateJson';
+// var queryParams = '?' + encodeURIComponent('ServiceKey') + '=서비스키'; /* Service Key*/
+// queryParams += '&' + encodeURIComponent('pageNo') + '=' + encodeURIComponent('1'); /* */
+// queryParams += '&' + encodeURIComponent('numOfRows') + '=' + encodeURIComponent('10'); /* */
+// queryParams += '&' + encodeURIComponent('startCreateDt') + '=' + encodeURIComponent('20200310'); /* */
+// queryParams += '&' + encodeURIComponent('endCreateDt') + '=' + encodeURIComponent('20200414'); /* */
+
+// request({
+//     url: url + queryParams,
+//     method: 'GET'
+// }, function (error, response, body) {
+//     //console.log('Status', response.statusCode);
+//     //console.log('Headers', JSON.stringify(response.headers));
+//     //console.log('Reponse received', body);
+// });
